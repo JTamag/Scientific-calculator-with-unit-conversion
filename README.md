@@ -1,0 +1,2 @@
+# Scientific calculator
+### Now that i have gained some insight into how html,js and css work I will begin developing this new project where i will merge the past 2 projects in order to make a calculator app like the ones we have on our phone

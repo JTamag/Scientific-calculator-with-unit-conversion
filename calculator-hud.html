@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Calculator</title>
+        <link rel="stylesheet" href="calculator-interface.css">
+    </head>
+    <body>
+        <div id="app-switcher" style="text-align:center; margin-bottom: 20px;">
+            <button class="App_btn" onclick="window.location.href='unit-converter-hud.html'">Unit Converter</button>
+        </div>
+        <div id="calculator">
+            <input id="display" readonly>
+            <div id="buttons">
+                <button class="btn" onclick="appendToDisplay('7')">7</button>
+                <button class="btn" onclick="appendToDisplay('8')">8</button>
+                <button class="btn" onclick="appendToDisplay('9')">9</button>
+                <button class="btn_operator" onclick="appendToDisplay('+')">+</button>
+                
+                <button class="btn" onclick="appendToDisplay('4')">4</button>
+                <button class="btn" onclick="appendToDisplay('5')">5</button>
+                <button class="btn" onclick="appendToDisplay('6')">6</button>
+                <button class="btn_operator" onclick="appendToDisplay('-')">-</button>
+                
+                <button class="btn" onclick="appendToDisplay('1')">1</button>
+                <button class="btn" onclick="appendToDisplay('2')">2</button>
+                <button class="btn" onclick="appendToDisplay('3')">3</button>
+                <button class="btn_operator" onclick="appendToDisplay('*')">*</button>
+                
+                <button class="btn zero" onclick="appendToDisplay('0')">0</button>
+                <button class="btn" onclick="appendToDisplay('.')">.</button>
+                <button class="equal_sign" onclick="calculateResult()">=</button>            
+                <button class="btn_operator" onclick="appendToDisplay('/')">/</button>
+                <button class="btn_operator" onclick="Deletechar()">Del</button>
+
+                <button class="btn_operator" onclick="clearDisplay()">C</button>
+            </div>
+        </div>
+        <script src="calculator-code.js"></script>
+    </body>
+</html>

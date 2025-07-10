@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit converter</title>
+    <link rel="stylesheet" href="unitconverter-interface.css">
+</head>
+<body>
+    <div id="app-switcher" style="text-align:center; margin-bottom: 20px;">
+    <button class="App_btn" onclick="window.location.href='calculator-hud.html'">Calculator</button>
+    </div>
+    <div id="unit-converter">
+        <h1>Unit Converter</h1>
+        <p>Convert between different units of measurement.</p>
+        <button class="btn_operator2" onclick="Area()">Area</button>
+        <button class="btn_operator2" onclick="Length()">Length</button>
+        <button class="btn_operator2" onclick="Volume()">Volume</button>
+        <button class="btn_operator2" onclick="Weight()">Weight</button>
+        <button class="btn_operator2" onclick="Temperature()">Temperature</button>
+        <button class="btn_operator2" onclick="Time()">Time</button>
+    <div id="input-box">        
+        <label for="unit-select1">Choose the first unit:</label>
+        <select id="unit-select1" name="units1">
+            <option value="Millimetres">Millimetres</option>
+            <option value="Centimeters">Centimeters</option>
+            <option value="Meters">Meters</option>
+            <option value="Kilometers">Kilometers</option>
+            <option value="Miles">Miles</option>
+            <option value="Feet">Feet</option>
+            <option value="Inches">Inches</option>
+            <option value="Yards">Yards</option>
+        </select>
+        <input id="display1" write>
+        <button class="swap_button" onclick="swapUnits()"><img src="C:\Users\João Tamagnini\OneDrive\Ambiente de Trabalho\Projects\Unit-converter\swap_icon.png"
+             alt="Swap button" style="width:24px;height: 30px;"></button>
+    </div>
+    <div id="output-box">  
+        <label for="unit-select2">Choose the second unit:</label>
+        <select id="unit-select2" name="units2">
+            <option value="Millimetres">Millimetres</option>
+            <option value="Centimeters">Centimeters</option>
+            <option value="Meters">Meters</option>
+            <option value="Kilometers">Kilometers</option>
+            <option value="Miles">Miles</option>
+            <option value="Feet">Feet</option>
+            <option value="Inches">Inches</option>
+            <option value="Yards">Yards</option>
+        </select>
+        <input id="display2" readonly>
+    </div>
+    <button class="btn_operator" onclick="convertUnits()">Convert units</button>
+    </div>  
+    <script src="unit_conversion_alg.js"></script>
+</body>
+</html>
